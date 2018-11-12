@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* Skriv kommentaren här... Key: value; pairs */
+body {
+    background-color: rgba(255, 159, 159, 0.65);
+}
+
+h1 {
+    background-color: red;
+    color: white;
+    text-shadow: 2px 2px 1px #000000, -2px -2px 1px #000000; /* x y blur color */
+    text-align: center;
+    line-height: 100px;
+    letter-spacing: 5px;
+    font-weight: 200;
+    text-decoration: none;
+    opacity: 1; /* Transparens: 0 - 1  */
+}
+
+h6 {
+    color: green;
+    background-color: aqua;
+}
+
+p {
+    background-color: red;
+    color: azure;
+    font-style: italic;
+    padding: 10px;
+}
+
+ul {
+    border: 1px solid #000000; /* width appearance color */
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+ul li {
+    color: red;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    background-color: blue;
+    display: inline;
+}
+
+.wrapper {
+    background-color: #9b59b6;
+    min-height: 400px;
+    width: 80%;
+    margin: auto; /* top right bottom left - Tänk klockan 12 3 6 9 */
+}
+
+header {
+    height: 200px;
+    background-color: #8e44ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+main {
+    background-color: #9f55be;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    flex: 1;
+}
+
+.box1 {
+    background-color: red;
+    align-self: flex-end;
+}
+.box2 {
+    background-color: blue;
+    flex: 5;
+}
+.box3 {
+    background-color: green;
+}
+.box4 {
+    background-color: orange;
+}
+.box5 {
+    background-color: black;
+    flex: 2;
+}
+.box6 {
+    background-color: white;
+}
+.box7 {
+    background-color: #123421;
+    flex: 10;
+    height: 100px;
+}
+.box8 {
+    background-color: rgb(123, 255, 0);
+}
+.box9 {
+    background-color: aquamarine;
+}
+.box10 {
+    background-color: coral;
+}
+
+.completed {
+    box-shadow: 2px 2px 1px #fff;
+}
+
+
+/* 
+    DRY - Don't Repeat Yourself +1
+    WET - Write Everything Twice -1
+*/
