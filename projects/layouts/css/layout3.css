@@ -1,0 +1,64 @@
+@charset 'utf-8';
+
+body {
+background: #f2709c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #f2709c, #ff9472); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f2709c, #ff9472); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+    padding: 20px;
+}
+
+header img {
+    border-radius: 100%;
+}
+
+nav {
+/*    background: blue;*/
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+    margin: auto;
+    padding: 10px
+        0px;
+/*    background: red;*/
+    width: 50%;
+}
+
+.image-slider {
+    display: flex;
+    background: #ecf0f1;
+    justify-content: center;
+    padding: 50px;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.portfolio figure {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer section {
+    padding: 20px;
+    border: 1px solid black;
+}
