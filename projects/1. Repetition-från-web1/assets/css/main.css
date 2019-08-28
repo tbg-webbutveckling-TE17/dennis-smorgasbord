@@ -1,3 +1,45 @@
 body {
-	background-color: cornflowerblue;
+	background-color: #ecf0f1;
+}
+
+.wrapper {
+	width: 80%;
+	min-height: 600px;
+
+	border: 1px solid gray;
+	margin: auto;
+}
+
+nav {
+	height: 50px;
+	background: #9b59b6;
+}
+
+nav ul {
+	display: flex; /* main axis = X */
+	flex-flow: row; /* row = x; column = y; */
+	height: 100%;
+	justify-content: space-around; /* main axis */
+	align-items: center; /* Cross axis */
+	padding: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: flex;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-family: "Courier";
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 18px;
+	line-height: 50px;
+}
+
+nav ul li a:hover {
+	background: rgba(0, 0, 0, .2);
 }
