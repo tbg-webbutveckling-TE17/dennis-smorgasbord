@@ -230,13 +230,15 @@ window.addEventListener('load', function(event) {
 	var displayBill = document.getElementsByClassName('displayBill')[0];
 	displayBill.innerHTML = receipt;
 
+	// Step 1:
 	// Write a function named tellFortune that:
 	// takes 4 arguments: number of children, partner's name, geographic location, job title.
 	// outputs your fortune to the an element like so: "You will be a X in Y,
 	// and married to Z with N kids."
 	// Call that function 3 times with 3 different values for the arguments.
 
-	// Extended version: Create a button that calls this function
+	// Step 2:
+	// Create a button that calls this function
 	// Each time the button is clicked random values of the 4 arguments will be printed out
 	// in an element on the webpage
 	// Tip: Store different values of each argument in arrays that when is called
@@ -249,3 +251,27 @@ window.addEventListener('load', function(event) {
 
 	tellFortune('', '', '', x);
 });
+
+// You know how old your dog is in human years, but what about dog years? Calculate it!
+
+// Step 1:
+// Write a function named calculateDogAge that:
+// takes 1 argument: your puppy's age.
+// calculates your dog's age based on the conversion rate of 1 human year to 7 dog years.
+// outputs the result to the screen like so: "Your doggie is NN years old in dog years!"
+// Call the function three times with different sets of values.
+
+// Step 2:
+// Add an additional argument to the function that takes the conversion rate of human to dog years.
+
+// Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
+
+// Step 1:
+// Write a function named calculateSupply that:
+// takes 2 arguments: age, amount per day.
+// calculates the amount consumed for rest of the life (based on a constant max age).
+// outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"
+// Call that function three times, passing in different values each time.
+
+// Step 2:
+// Accept floating point values for amount per day, and round the result to a round number.
