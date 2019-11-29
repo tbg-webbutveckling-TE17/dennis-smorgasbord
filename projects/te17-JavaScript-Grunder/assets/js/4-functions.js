@@ -296,7 +296,7 @@ function calculateDogAge() {}
 
 function calculateSupply() {}
 
-// You'll create a simple word guessing game where the user gets infinite tries to guess the word
+// You'll create a simple word guessing game where the user gets 10 tries to guess the word
 // (like Hangman without the hangman, or like Wheel of Fortune without the wheel and fortune).
 
 // Step 1:
