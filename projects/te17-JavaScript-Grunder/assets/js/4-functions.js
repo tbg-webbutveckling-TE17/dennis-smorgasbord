@@ -320,3 +320,40 @@ function calculateSupply() {}
 // When they guess the word, log their final reward amount.
 
 // Solution (good luck!)
+
+// Arrays
+var wordLetters = [ 'G', 'O', 'A', 'T' ];
+var guessedLetters = [ '_', '_', '_', '_' ];
+
+// DOM: Wins - Losses - Guesses
+
+// DOM elements
+
+// When key is pressed
+document.addEventListener('keypress', function(e) {
+	// Track key
+	var myGuess = e.key;
+
+	// goodGuess?
+
+	// moreToGuess?
+
+	// Loopa igenom hangman-arrayen
+	// if wordLetters[i] == myGuess
+	// in guessedLetters[i] add myGuess
+	// goodGuess == true
+
+	// if guessedLetters is still empty
+	// moreToGuess == true
+
+	// if goodGuess
+	// Congratulate the player
+	// if moreToGuess is false
+	// wins++, reset guesses, reset guessedLetters array, reset guessed letters, congratulate player for winning
+
+	// if guesses turns to zero
+	// loss++, reset guesses, tell the player that it's a loss
+	// else if none of the above applies guesses--, print out the guessed letter on screen
+
+	// keep track of wins, losses and guesses
+});
