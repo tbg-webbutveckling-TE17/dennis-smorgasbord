@@ -89,3 +89,53 @@ var countries = [ 'sweden', 'norway', 'finland', 'denmark', 'island' ];
 countries.forEach(function(country) {
 	printToScreen.innerHTML += country + ' ';
 });
+printToScreen.innerHTML = '';
+var planets = [ 'earth', 'mars', 'saturnus', 'jupiter' ];
+planets.forEach(function(planet) {
+	printToScreen.innerHTML += planet + ' - ';
+});
+
+printToScreen.innerHTML = '';
+var number = [ 1, 32, 44, 112, 3, 5, 6, 9, 12 ];
+var color = [ 'red', 'green', 'blue', 'yellow' ];
+
+number.forEach(function(num) {
+	if (num % 3 === 0) {
+		printToScreen.innerHTML += num + ' ';
+	}
+});
+
+for (var i = 0; i < number.length; i++) {
+	if (number[i] % 3 === 0) {
+		printToScreen.innerHTML += number[i] + ' ';
+	}
+}
+
+var foods = [ 'sausage', 'meatballs', 'pasta', 'pizza' ];
+foods.forEach(function(food) {
+	printToScreen.innerHTML += food + ' ';
+});
+
+var subjects = [];
+subjects.push('Svenska 3', 'Matematik 5', 'Fysik 2');
+subjects.forEach(function(subject) {});
+
+/*
+***************************************
+Arrays - Skriftlig övning
+***************************************
+*/
+
+// Write a function printReverse() that takes an array
+// as an argument and prints out the elements in the array
+// in reverse order (don't actually reverse the array itself)
+
+printReverse([ 1, 2, 3, 4, 5, 6, 7 ]);
+
+// Write a function isIdentical() which takes an array as an argument
+// and returns true if all elements in the array are identical
+
+// Write a function sumArray() that accepts an array of numbers and
+// returns the sum of all numbers in the array
+
+// Write a function max() that accepts an array of numbers and returns the maximum number in the array
