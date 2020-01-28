@@ -116,9 +116,12 @@ foods.forEach(function(food) {
 	printToScreen.innerHTML += food + ' ';
 });
 
+printToScreen.innerHTML = '';
 var subjects = [];
 subjects.push('Svenska 3', 'Matematik 5', 'Fysik 2');
-subjects.forEach(function(subject) {});
+subjects.forEach(function(subject) {
+	printToScreen.innerHTML += subject + ' / ';
+});
 
 /*
 ***************************************
@@ -129,13 +132,51 @@ Arrays - Skriftlig övning
 // Write a function printReverse() that takes an array
 // as an argument and prints out the elements in the array
 // in reverse order (don't actually reverse the array itself)
+printToScreen.innerHTML = '';
+function printReverse(array) {
+	for (var i = array.length - 1; i >= 0; i--) {
+		printToScreen.innerHTML += array[i] + ' ';
+	}
+}
 
 printReverse([ 1, 2, 3, 4, 5, 6, 7 ]);
 
 // Write a function isIdentical() which takes an array as an argument
 // and returns true if all elements in the array are identical
+function isIdentical(array) {
+	var first = array[0];
+	for (var i = 1; i < array.length; i++) {
+		if (array[i] !== first) {
+			return false;
+		}
+	}
+	return true;
+}
+
+isIdentical([ 1, 1, 1, 1, 1, 1, 1 ]); // true
+isIdentical([ 1, 1, 1, 2, 1, 1, 1 ]); // false
 
 // Write a function sumArray() that accepts an array of numbers and
 // returns the sum of all numbers in the array
 
+function sumArray(array) {
+	var total = 0;
+	array.forEach(function(value) {
+		total += value;
+	});
+	printToScreen.innerHTML = total;
+	return total;
+}
+
+sumArray([ 1, 2, 3, 4, 5 ]);
+
 // Write a function max() that accepts an array of numbers and returns the maximum number in the array
+function max(array) {
+	var maximum = array[0];
+	array.forEach(function(index) {
+		if (index > maximum) {
+			maximum = index;
+		}
+	});
+}
+max([ 2, 1, 23, 54, 4, 12 ]);
