@@ -57,7 +57,7 @@ var posts = [
 	{
 		author: 'CatLuvr',
 		title: 'Catz are gr8',
-		comments: 'I have such an adorable cat!'
+		comments: [ 'I have such an adorable cat!', 'My cat is cuuute!' ]
 	},
 	{
 		author: 'DogKing',
@@ -67,7 +67,20 @@ var posts = [
 	{
 		author: 'Tiger',
 		title: 'Big cat',
-		comments: "He's such a big cat."
+		comments: [ "He's such a big cat." ]
 	}
 ];
-output.innerHTML = 'Author: ' + posts[1].author + ' comments: ' + posts[1].comments[0];
+// output.innerHTML = 'Author: ' + posts[1].author + '<br/> Comment: ' + posts[1].comments[0];
+
+// 2. Iterate through the entire array and display the key/value pairs in each object
+output.innerHTML = '';
+posts.forEach(function(post) {
+	output.innerHTML +=
+		'Author: ' +
+		post.author +
+		'<br/>Title: ' +
+		post.title +
+		'<br/>Comments: ' +
+		post.comments.join(' --- ') +
+		'<br/><br/>';
+});
