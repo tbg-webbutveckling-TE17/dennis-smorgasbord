@@ -1,50 +1,50 @@
 @charset "utf-8";
 
 body {
-    background: #ffa802;
+	background: #ffa802;
 }
 
 ::selection {
-    background: red;
-    color: black;
+	background: red;
+	color: black;
 }
 
 .wrapper {
-    margin: auto;
-    width: 70%;
+	margin: auto;
+	width: 70%;
 }
 
 .grid {
-    border: 1px solid black; /* tjocklek typ färg */
-    height: 400px;
-    
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+	border: 1px solid black; /* tjocklek typ färg */
+	height: 400px;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .grid-item:nth-child(odd) {
-    background: teal;
+	background: teal;
 }
 
 .grid-item:nth-child(even) {
-/*    background: #ff0000; */
-    background: rgb(255, 0, 0); /* RBG */
+	/*    background: #ff0000; */
+	background: rgb(255, 0, 0); /* RBG */
 }
 
 .grid-item a {
-    text-decoration: none;
-    color: white;
-    font-size: 32px;
-    transition: all .3s;
+	text-decoration: none;
+	color: white;
+	font-size: 32px;
+	transition: all .3s;
 }
 
 .grid-item a:hover {
-    text-shadow: 1px 1px #000;
-    color: #eee;
+	text-shadow: 1px 1px #000;
+	color: #eee;
 }

@@ -17,3 +17,28 @@ body h1 {
 	text-shadow: 2px 2px #000;
 	font-size: 32px;
 }
+section img {
+	width: 50%;
+}
+section button {
+	padding: 10px;
+	text-shadow: 1px 1px 0px #000;
+	color: #fff;
+	text-transform: uppercase;
+	outline: none;
+}
+section button::before {
+	content: "> ";
+}
+section button::after {
+	content: "! ";
+}
+section button:nth-child(1) {
+	background-color: red;
+}
+section button:nth-child(2) {
+	background-color: blue;
+}
+section button:nth-child(3) {
+	background-color: Orange;
+}
